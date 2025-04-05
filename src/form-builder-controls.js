@@ -128,7 +128,7 @@ export default [
           config: {
             label: 'Search Enable',
             helper: '',
-            value: '1',
+            value: true,
           },
         },
         {

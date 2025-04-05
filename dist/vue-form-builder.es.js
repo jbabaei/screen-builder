@@ -49751,7 +49751,7 @@ const Aee = Ou(Tee), sre = Ou(Oee), ore = Ou([Cee]), zee = Ou([XP, VP]), Eee = D
           config: {
             label: "Search Enable",
             helper: "",
-            value: "1"
+            value: !0
           }
         },
         {

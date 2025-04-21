@@ -92,8 +92,8 @@ export default [
   {
     builderComponent: FormGrid,
     builderBinding: 'FormGrid',
-    rendererComponent: FormGrid,
-    rendererBinding: 'FormGrid',
+    rendererComponent: FormHtmlEditor,
+    rendererBinding: 'FormHtmlEditor',
     control: {
       popoverContent: "Collect a string of text and format it as one of several data types",
       order: 1.0,

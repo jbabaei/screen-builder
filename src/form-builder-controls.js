@@ -150,6 +150,16 @@ export default [
             //value: '20',
           },
         },
+        {
+          type: 'FormTextArea',
+          field: 'footerCallback',
+          config: {
+            rows: 5,
+            label: 'Footer Callback Func',
+            helper: 'function to generate footer',
+            value: '',
+          },
+        },
         keyNameProperty,
         defaultValueProperty,
       ],

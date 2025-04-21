@@ -22227,7 +22227,7 @@ class NH extends Za {
 }
 class FH extends Za {
   async addValidations(e) {
-    if (this.element.config && this.element.config.readonly || this.element.config && this.element.config.disabled || !(this.element.config && this.element.config.name && typeof this.element.config.name == "string" && this.element.config.name.match(/^[a-zA-Z_][0-9a-zA-Z_.]*$/)))
+    if (!this.isVisible() || this.element.config && this.element.config.readonly || this.element.config && this.element.config.disabled || !(this.element.config && this.element.config.name && typeof this.element.config.name == "string" && this.element.config.name.match(/^[a-zA-Z_][0-9a-zA-Z_.]*$/)))
       return;
     const r = this.element.config.name, a = this.element.config.validation, i = this.element.config.conditionalHide, n = this.parentVisibilityRule, s = this.insideLoop || !1, o = this.element.config.deviceVisibility ? this.element.config.deviceVisibility : { showForDesktop: !0, showForMobile: !0 };
     Un(e, r, Se(e, r, {}));
@@ -49771,6 +49771,16 @@ const Aee = Ou(Tee), sre = Ou(Oee), ore = Ou([Cee]), zee = Ou([XP, VP]), Eee = D
             helper: "",
             type: "number"
             //value: '20',
+          }
+        },
+        {
+          type: "FormTextArea",
+          field: "footerCallback",
+          config: {
+            rows: 5,
+            label: "Footer Callback Func",
+            helper: "function to generate footer",
+            value: ""
           }
         },
         Qt,

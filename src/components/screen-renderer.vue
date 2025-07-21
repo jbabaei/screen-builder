@@ -6,7 +6,9 @@
       class="alert alert-light"
       role="alert"
     >
-      <svg
+    <img style="width: 120px; display: block; margin-left: auto; margin-right: auto;" draggable="false" 
+                                src="/img/loading_custom.gif" />
+      <!-- <svg
         class="lds-gear"
         width="20px"
         height="20px"
@@ -30,7 +32,7 @@
             />
           </g>
         </g>
-      </svg>
+      </svg> -->
       {{ $t("Loading...") }}
     </div>
     <component

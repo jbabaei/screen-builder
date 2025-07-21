@@ -6,8 +6,8 @@
       class="alert alert-light"
       role="alert"
     >
-    <img style="width: 120px; display: block; margin-left: auto; margin-right: auto;" draggable="false" 
-                                src="/img/loading_custom.gif" />
+    <!-- <img style="width: 120px; display: block; margin-left: auto; margin-right: auto;" draggable="false" 
+                                src="/img/loading_custom.gif" /> -->
       <!-- <svg
         class="lds-gear"
         width="20px"

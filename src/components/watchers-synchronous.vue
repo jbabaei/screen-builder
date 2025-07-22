@@ -22,8 +22,8 @@
           </g>
         </svg> -->
       </div>
-      <h3 class="display-6">{{ message }}</h3>
-      <p class="lead">{{ $t('This window will automatically close when complete.') }}</p>
+      <!-- <h3 class="display-6">{{ message }}</h3>
+      <p class="lead">{{ $t('This window will automatically close when complete.') }}</p> -->
     </div>
 
     <div class="container text-center" v-else>

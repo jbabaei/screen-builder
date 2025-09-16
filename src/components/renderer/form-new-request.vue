@@ -3,12 +3,9 @@
     <div v-if="Object.keys(processes).length && !loading" class="process-list">
       <div class="row">
         <template v-for="(process, index) in processes">
-          <div v-for="(event, indexE) in emptyStartEvents(process)" :key="`process-${index}-${indexE}`" class="col-sm-6">
-            <ProcessCard
-              :filter="filter"
-              :process="process"
-              :event="event"
-            />
+          <div v-for="(event, indexE) in emptyStartEvents(process)" :key="`process-${index}-${indexE}`"
+            class="col-sm-6">
+            <ProcessCard :filter="filter" :process="process" :event="event" />
           </div>
         </template>
       </div>
@@ -57,10 +54,10 @@ export default {
       Vue.nextTick(() => {
         window.ProcessMaker.apiClient
           .get(
-            `start_processes?page=${this.page}&per_page=${this.perPage}&filter=${this.filter}&order_by=category.name,name` +
-              "&order_direction=asc,asc" +
-              "&include=events" +
-              "&without_event_definitions=true"
+            `start_processes?page=${this.page}&per_page=${this.perPage}&filter=${this.filter}&order_by=category.name,process_order` +
+            "&order_direction=asc,asc" +
+            "&include=events" +
+            "&without_event_definitions=true"
           )
           .then((response) => {
             const { data } = response;
